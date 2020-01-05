@@ -500,7 +500,7 @@ def nonmaxsupp(bboxes0, valid_kps0):
         w = np.maximum(0, xx2 - xx1 + 1)
         h = np.maximum(0, yy2 - yy1 + 1)
         # compute the ratio of overlap
-	overlap = (w * h) / area[idxs[:last]]
+	overlap =(w*h)/area[idxs[:last]]
 
         # delete all indexes from the index list that have
 	idxs = np.delete(idxs, np.concatenate(([last],
