@@ -24,9 +24,9 @@ $
 
 kVidDir = '/Sfv_data/data'
 kOutDir = '/Sfv_data/openpose_output'
-
-kOpenPose = '/scratch1/storage/git_repos/openpose'
-kOpenPoseModel = '/scratch1/storage/git_repos/Realtime_Multi-Person_Pose_Estimation/aj_finetuned_models_170k/'
+# Get openpose from here https://drive.google.com/file/d/1lSLrZDLGY93zOw3i2V-KuhhASC9YG7ez/view
+kOpenPose = '/openpose'
+kOpenPoseModel = '/aj_finetuned_models_170k'
 
 tf.app.flags.DEFINE_string('video_dir', kVidDir, 'dir of vids')
 tf.app.flags.DEFINE_string('out_dir', kOutDir, 'dir of output')
