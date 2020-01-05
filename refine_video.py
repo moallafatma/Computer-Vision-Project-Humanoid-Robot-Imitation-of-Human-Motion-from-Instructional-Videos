@@ -248,7 +248,8 @@ def main(config):
     # Figure out the save name.
     pred_dir = get_pred_prefix(config.load_path)
     # import ipdb; ipdb.set_trace()
-    pred_dir = '/home/kanazawa/projects/hmr_sfv/demo_data/results_smoothed/'
+    pred_dir = kOutDir
+    #'/home/kanazawa/projects/hmr_sfv/demo_data/results_smoothed/'
 
     for i, vid_path in enumerate(video_paths[:]):
         out_mov_path = join(pred_dir, basename(vid_path).replace('.mp4', '.h5'))
