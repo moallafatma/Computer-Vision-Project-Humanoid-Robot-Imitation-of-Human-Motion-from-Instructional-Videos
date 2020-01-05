@@ -35,7 +35,7 @@ tf.app.flags.DEFINE_string('op_model_dir', kOpenPoseModel, 'dir of openpose mode
 VIS_THR = 0.1
 # KP is only accecptable if this many points are visible
 NUM_VIS_THR = 5
-# After smoothing, cut back until final conf is above this.
+##After smoothing, cut back until final conf is above this.
 END_BOX_CONF = 0.1
 # Required IOU to be a match
 IOU_THR = 0.05
