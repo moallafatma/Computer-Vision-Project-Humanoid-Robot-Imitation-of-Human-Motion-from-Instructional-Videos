@@ -487,24 +487,23 @@ def nonmaxsupp(bboxes0, valid_kps0):
     
     # Small first,,
     idxs = np.argsort(scores)
-
     while len(idxs) > 0:
-        last = len(idxs)-1
-        i = idxs[last]
-        pick.append(i)
+      last = len(idxs)-1
+      i = idxs[last]
+      pick.append(i)
         # compute iou
-        xx1 = np.maximum(x1[i], x1[idxs[:last]])
-        yy1 = np.maximum(y1[i], y1[idxs[:last]])
-        xx2 = np.minimum(x2[i], x2[idxs[:last]])
-        yy2 = np.minimum(y2[i], y2[idxs[:last]])
+      xx1 = np.maximum(x1[i], x1[idxs[:last]])
+      yy1 = np.maximum(y1[i], y1[idxs[:last]])
+      xx2 = np.minimum(x2[i], x2[idxs[:last]])
+      yy2 = np.minimum(y2[i], y2[idxs[:last]])
         # Compute width height
-        w = np.maximum(0, xx2 - xx1 + 1)
-        h = np.maximum(0, yy2 - yy1 + 1)
+      w = np.maximum(0, xx2 - xx1 + 1)
+      h = np.maximum(0, yy2 - yy1 + 1)
         # compute the ratio of overlap
-	overlap = (w*h)/(area[idxs[:last]])
+	    overlap = (w*h)/(area[idxs[:last]])
 
         # delete all indexes from the index list that have
-	idxs = np.delete(idxs, np.concatenate(([last],np.where(overlap > NMS_THR)[0])))
+	    idxs = np.delete(idxs, np.concatenate(([last],np.where(overlap > NMS_THR)[0])))
 
     return bboxes0[pick], valid_kps0[pick]
                 
@@ -527,7 +526,7 @@ def get_bbox(kp):
     radius = RADIUS * (1 / scale)
     top_corner = center - radius
     bbox = np.hstack([top_corner, radius * 2, radius * 2])
-
+    
     return np.hstack([center, scale, score, bbox]), kp
 
 
