@@ -20,8 +20,6 @@ import tensorflow as tf
 from src.util.renderer import draw_openpose_skeleton
 
 
-$
-
 kVidDir = '/Sfv_data/data'
 kOutDir = '/Sfv_data/openpose_output'
 # Get openpose from here https://drive.google.com/file/d/1lSLrZDLGY93zOw3i2V-KuhhASC9YG7ez/view
