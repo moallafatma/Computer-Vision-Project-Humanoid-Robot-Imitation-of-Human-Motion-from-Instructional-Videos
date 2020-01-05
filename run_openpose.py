@@ -19,8 +19,11 @@ import tensorflow as tf
 
 from src.util.renderer import draw_openpose_skeleton
 
-kVidDir = '/home/kanazawa/projects/hmr_sfv/demo_data/videos'
-kOutDir = '/home/kanazawa/projects/hmr_sfv/demo_data/openpose_output'
+
+$
+
+kVidDir = '/Sfv_data/data'
+kOutDir = '/Sfv_data/openpose_output'
 
 kOpenPose = '/scratch1/storage/git_repos/openpose'
 kOpenPoseModel = '/scratch1/storage/git_repos/Realtime_Multi-Person_Pose_Estimation/aj_finetuned_models_170k/'
