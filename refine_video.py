@@ -36,11 +36,11 @@ from src.refiner import Refiner
 
 
 # Defaults:
-kVidDir = '/home/kanazawa/projects/hmr_sfv/demo_data/videos/'
+kVidDir = '/Sfv_data/data'
 # Where the smoothed results will be stored.
-kOutDir = '/home/kanazawa/projects/hmr_sfv/demo_data/results_smoothed/'
+kOutDir = '/Sfv_data/results_smoothed'
 # Holds h5 for each video, which stores OP outputs, after trajectory assignment.
-kOpDir = '/home/kanazawa/projects/hmr_sfv/demo_data/openpose_output'
+kOpDir = '/Sfv_data/openpose_output'
 
 
 kMaxLength = 1000
