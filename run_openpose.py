@@ -483,6 +483,7 @@ def nonmaxsupp(bboxes0, valid_kps0):
     x2 = x1 + bboxes[:, 2] - 1
     y2 = x2 + bboxes[:, 3] - 1
     area = bboxes[:, 2] * bboxes[:, 3]
+
     
     # Small first,,
     idxs = np.argsort(scores)
