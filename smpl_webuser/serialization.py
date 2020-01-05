@@ -28,6 +28,7 @@ import chumpy as ch
 import posemapper
 from chumpy.ch import MatVecMult
 from posemapper import posemap
+import verts
 from verts import verts_core
     
 def save_model(model, fname):
