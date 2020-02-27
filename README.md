@@ -2,7 +2,7 @@
 
 This is a computer vision project realised by Carla Yagoub and myself (Fatma Moalla) and consists in  3 papers reviews and application of the algorithms implemented in the papers. \\
 
-The project is proposed by the INRIA Paris, WILLOW team within within 2019 Computer vision and Object Recognition MVA course. 
+The project is proposed by the INRIA Paris, WILLOW team within within 2019 Computer vision and Object Recognition MVA course (link to course: https://www.di.ens.fr/willow/teaching/recvis19/) 
 
 
 ***
