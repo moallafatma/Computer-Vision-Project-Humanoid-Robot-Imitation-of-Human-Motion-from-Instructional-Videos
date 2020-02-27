@@ -1,3 +1,11 @@
+# Papers review and application:
+
+This is a computer vision project realised by Carla Yagoub and myself (Fatma Moalla) and consists in  3 papers reviews and application of the algorithms implemented in the papers. 
+The project is proposed by the INRIA Paris, WILLOW team within within 2019 Computer vision and Object Recognition MVA course. 
+
+
+***
+
 # Motion Reconstruction Code and Data for Skills from Videos (SFV)
 
 This repo contains the data and the code for motion reconstruction component of the SFV paper:
